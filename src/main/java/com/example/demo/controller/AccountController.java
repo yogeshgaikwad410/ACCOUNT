@@ -35,6 +35,7 @@ public class AccountController {
 	{
 		accountServiceImpl.createCurrentAccount();
 		currentAccount.setAccountBalance(new BigDecimal(0.0));
+		System.out.println("welcome to Account");
 		return new ResponseEntity<String>("Created Current A/c SuccessFully ", HttpStatus.CREATED);
 	}
 	
