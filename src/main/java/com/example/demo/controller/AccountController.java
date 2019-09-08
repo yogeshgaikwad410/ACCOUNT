@@ -48,7 +48,14 @@ public class AccountController {
 	public ResponseEntity<String> createSavingAccount(@RequestBody SavingAccount savingAccount)
 	{
 		accountServiceImpl.createSavingAccount();
+		System.out.println("welcome to Saving Account");
 		return new ResponseEntity<String>("Created Saving A/c Succesfully",HttpStatus.CREATED);
+	}
+	
+	public void welcomeBank()
+	{
+		System.out.println("hiii all users");
+		System.out.println("Welcome to Bank Account");
 	}
 	
 		
